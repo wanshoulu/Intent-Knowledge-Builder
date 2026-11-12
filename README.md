@@ -38,7 +38,7 @@ npm start            # → http://127.0.0.1:3200（零依赖，前端已预构�
 cp .env.example .env    # 填入密钥
 
 # 小 i 运行时（意图识别试算，需 packages/xiaoi-core）
-npm run runtime         # → http://127.0.0.1:3100
+npm run runtime         # → http://127.0.0.1:3100（主服务默认已指向该地址，无需额外设置）
 ```
 
 ## 从源码重建前端

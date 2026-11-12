@@ -39,7 +39,9 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
-    // jsdom 下 antd Menu 点击 → 路由切换 → 页面挂载链路较慢，默认 5s 会超时
-    testTimeout: 20000,
+    // jsdom 下 antd Menu 点击 → 路由切换 → 页面挂载链路较慢，默认 5s 会超时。
+    // 2026-11-12 实测：concepts-interactions 最慢一条用例 26.7s、次慢 14.4s
+    // （单文件单独运行、无其他构建任务竞争），20s 会误报超时，故阈值设为 45s。
+    testTimeout: 45000,
   },
 });

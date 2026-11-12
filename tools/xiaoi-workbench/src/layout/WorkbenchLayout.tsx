@@ -108,7 +108,7 @@ export function WorkbenchLayout() {
           {!collapsed ? (
             <div className="brand-copy">
               <strong>小 i 知识工作台</strong>
-              <span>AI Harbor</span>
+              <span>Intent-Knowledge-Builder</span>
             </div>
           ) : null}
         </div>

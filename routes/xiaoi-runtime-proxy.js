@@ -14,7 +14,7 @@ function handleXiaoiRuntimeProxy(request, response, options = {}) {
   const target = new URL(
     options.target ||
     process.env.XIAOI_RUNTIME_URL ||
-    'http://127.0.0.1:17387'
+    'http://127.0.0.1:3100'
   );
   const originalUrl = new URL(request.url, 'http://ai-harbor');
   const suffix = pathname.slice(PUBLIC_PREFIX.length);

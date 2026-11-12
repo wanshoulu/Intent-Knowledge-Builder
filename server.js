@@ -20,7 +20,7 @@
  * 环境变量（均可选，见 .env.example）：
  *   HOST / PORT          服务监听
  *   QWEN_KEY / DEEPSEEK_KEY 等   云 LLM 密钥（AI 辅助生成 DSL/正则/测试用例）
- *   XIAOI_RUNTIME_URL    小 i 运行时地址（默认 http://127.0.0.1:17387）
+ *   XIAOI_RUNTIME_URL    小 i 运行时地址（默认 http://127.0.0.1:3100，与 npm run runtime 一致）
  */
 
 const http = require('node:http');
