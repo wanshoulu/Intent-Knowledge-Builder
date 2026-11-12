@@ -1,0 +1,15 @@
+{
+  "name": "intent-knowledge-builder",
+  "version": "1.0.0",
+  "description": "小 i 知识工作台：知识点、语言规则、业务概念模型、交互编排、治理发布与反馈质检的一体化工作台（React + antd 前端 + 小 i 运行时）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:front": "cd tools/xiaoi-workbench && npm install && npm run build",
+    "test:front": "cd tools/xiaoi-workbench && npm install && npx vitest run",
+    "test:runtime": "cd services/xiaoi-runtime && node --test tests/*.test.js",
+    "runtime": "cd services/xiaoi-runtime && node src/server.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
